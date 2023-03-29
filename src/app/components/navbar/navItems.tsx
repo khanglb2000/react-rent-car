@@ -50,7 +50,7 @@ export function NavItems() {
       <Menu right styles={menuStyles}>
         <ListContainer>
           <NavItem menu>
-            <a href="#" className="no-underline">Home</a>
+            <a href="#">Home</a>
           </NavItem>
           <NavItem menu>
             <a href="#">Cars</a>
