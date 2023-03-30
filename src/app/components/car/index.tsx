@@ -13,9 +13,9 @@ import { Button } from "../button";
 interface ICarProps extends ICar {}
 
 const CarContainer = styled.div`
-    width: 18em;
-    min-height: 32em;
-    max-height: 32em;
+    width: 16.5em;
+    min-height: 23em;
+    max-height: 23em;
     box-shadow: 0 1.3px 17px -2px rgba(0, 0, 0, 0.4);
     ${tw`
         flex
@@ -34,6 +34,7 @@ const CarContainer = styled.div`
 const CarThumbnail = styled.div`
     width: 100%;
     height: auto;
+
     img {
         width: 100%;
         height: 100%;
@@ -63,6 +64,7 @@ const SmallText = styled.p`
     color: inherit;
     ${tw`
         inline-flex
+        m-0
         text-xs
         font-thin
     `};
@@ -151,14 +153,14 @@ export function Car(props: ICarProps) {
             </CarThumbnail>
             <CarName>{name}</CarName>
             <PricesContainer>
-            <DailyPrice>
-                ${dailyPrice}
-                <SmallText>/Day</SmallText>
-            </DailyPrice>
-            <MonthlyPrice>
-                ${monthlyPrice}
-                <SmallText>/Month</SmallText>
-            </MonthlyPrice>
+                <DailyPrice>
+                    ${dailyPrice}
+                    <SmallText>/Day</SmallText>
+                </DailyPrice>
+                <MonthlyPrice>
+                    ${monthlyPrice}
+                    <SmallText>/Month</SmallText>
+                </MonthlyPrice>
             </PricesContainer>
             <Seperator />
             <CarDetailsContainer>
