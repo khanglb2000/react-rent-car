@@ -64,9 +64,13 @@ const Description = styled.p`
         xl:text-lg
         sm:max-h-full
         overflow-hidden
-        max-h-12
+        max-h-20
         text-gray-800
     `};
+
+    @media (min-width: ${SCREENS.lg}) {
+        overflow: visible;
+    }
 `;
 
 const BlobContainer = styled.div`
